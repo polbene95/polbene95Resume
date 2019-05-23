@@ -1,0 +1,276 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1100px;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+#body {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1% 99%;
+    grid-template-columns: 25% 1% 74%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+img {
+    width: 100%;
+    margin: auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.right {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+.left {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+/*Left Container*/
+
+.profile-container {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.profile-container > div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.profile-container > div:nth-child(1) {
+    height: 15%;
+    padding-top: 1%;
+    width: 100%;
+}
+
+.profile-container > div:nth-child(2) {
+    height: 80%;
+}
+
+.info-container {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    font-size: 1.5rem;
+    justify-content: space-evenly;
+    padding-bottom: 2px;
+}
+
+.social-media > a {
+    color: black;
+    text-decoration: none;
+}
+
+.info-container > div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px 5px;
+    margin-bottom: 1px;
+}
+
+.skills-container {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills-container > div {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-container > div > p,
+.technologies > p {
+    width: fit-content;
+    padding: 3px 5px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Right Container*/
+
+.sumary-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.sumary-container > h3 {
+    align-self: flex-start;
+}
+
+.sumary-container > p {
+    width: 90%;
+    margin: 1px 0;
+    padding-right: 5%;
+}
+
+.expirience-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+}
+
+.eductation-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 10px;
+
+}
+
+
+.expirience-container > div {
+    width: 90%;
+}
+
+.school-description {
+    padding: 1px 0;
+    width: 90%;
+    margin: auto;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+
+
+.name {
+    width: 75%;
+    border-left: 1px solid black;
+    padding-left: 1%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.time-container {
+    width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.description > p {
+    font-weight: bold;
+}
+
+.description > ul {
+    list-style: disc;
+}
+
+.school {
+    width: 100%;
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 4px;
+
+}
+
+.project {
+    width: 95%;
+    margin: 2px 0;
+}
+
+.project > * {
+    margin-bottom: 3px;
+}
+
+.title {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
